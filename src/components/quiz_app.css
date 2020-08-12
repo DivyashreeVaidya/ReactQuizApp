@@ -1,13 +1,15 @@
-/*@import url("https://fonts.googleapis.com/css?family=Cormorant%20SC");
+@import url("https://fonts.googleapis.com/css?family=Cormorant%20SC");
+@import url("https://fonts.googleapis.com/css?family=Cormorant");
 @import url("https://fonts.googleapis.com/css?family=Cormorant%20Upright");
 @import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css");
-@import url("https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js");
-@import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js");
-body{
+
+
+.body{
   background-color: #002020;
-}
+  }
 .container {
-  position: absolute;
+  
+  position: relative;
   width: 60%;
   height: 60%;
   border: 1px solid rgba(0, 0, 0, 0.2);
@@ -16,7 +18,7 @@ body{
   border-radius: 10px;
   padding: 10px;
   box-sizing: border-box;
-  top: 0px;
+  top: 100px;
   bottom: 0px;
   left: 0px;
   right: 0px;
@@ -30,19 +32,34 @@ body{
 
 }
 
-.title {
+#title {
   font-family: Cormorant SC;
   position: relative;
   background-color: MintCream;
-  color: Black;
+  color: #002020;
   padding: 20px;
   font-size: 3.5em;
-  border-radius: 5px;
-  grid-column-gap: 5px;
+  border-radius: 1px;
+  font-weight: bold;
+  column-gap: 0em;
 }
+
+#progress{
+  font-family: Cormorant Upright;
+  position: relative;
+  background-color: MintCream;
+  color: #002020;
+  padding: 20px;
+  font-size: 3.5em;
+  border-radius: 1px;
+  font-weight: bold;
+  align-self: auto;
+
+}
+
  .question{
   font-family: Cormorant Upright;
-  font-size: 3em;
+  font-size: 2.5em;
   color: MintCream;
   padding: 10px;
   border-radius: 5px;
@@ -51,18 +68,18 @@ body{
 
  }
 
- .btn-lg{
+  #opt {
   background-color: MintCream;
   font-family: Cormorant Upright;
-  font-size: 2.8em;
-  padding: 10px;
+  font-size: 2.5em;
+  padding: 20px;
   border-radius: 5px;
   font-weight: bolder;
   margin-top: 16px;
   color: #002020;
 }
 
-.btn-lg:hover{
+#opt:hover{
   opacity: 70%;
 
 }
@@ -70,54 +87,37 @@ body{
 #nextq{
   font-family: Cormorant SC;
   display: block;
-  background-color:  #a4e8e6;
-  color: #51d3cf;
+  font-size: 1.8em;
+  font-weight: bolder;
+  background-color: #51d3cf;
+  color: #002020;
   margin-top: 18px;
   border: solid 3px Ivory;
-
-}*/
-
-
-
-
-
-
-
-.App {
-  text-align: center;
+}
+#nextq:hover{
+	opacity: 70%;
+	transition:opacity 0.15s;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.loading{
+      text-align: center;
+      margin-top: 400px;
+      font-family: Cormorant;
+      color: mintcream;
+      font-size: 5em;
 }
+.score1{
+      text-align: center;
+      margin-top: 500px;
+      font-family: Cormorant Upright;
+      color: mintcream;
+      font-size: 5em;
+    }
+    .score{
+      text-align: center;
+      font-family: Cormorant Upright;
+      color: mintcream;
+      font-size: 4em;
+    }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
